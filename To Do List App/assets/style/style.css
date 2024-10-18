@@ -1,0 +1,265 @@
+/* Mengatur font dan reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 700px;
+    border-color: 0 2px 8px black;
+  }
+  
+  .input-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input::placeholder{
+    color: #ffaa00;
+  }
+  
+  .input-section input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid #ffaa00;
+    outline: none;
+    font-size: 16px;
+    color: #ffaa00;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    background-color: white;
+    border: 1px solid #ffaa00;;
+    padding: 20px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffaa00;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: #ffaa00;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .add-btn {
+    padding: 20px 20px;
+    background-color: white;
+    border: 1px solid #ffaa00;
+    color: #ffaa00;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #ffaa00;
+    box-shadow: 0 0.2px 7px #ffaa00;
+  }
+  
+  .todo-item .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .todo-item button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: white;
+    border: 1px solid #ffaa00;
+    color: #ffaa00;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+  }
+  
+
+  /* Responsive */
+
+  @media (max-width: 600px) {
+    /* Mengatur font dan reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 500px;
+    border-color: 0 2px 8px black;
+  }
+  
+  .input-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  input::placeholder{
+    color: #ffaa00;
+  }
+  
+  .input-section input {
+    padding: 20px 10px;
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid #ffaa00;
+    outline: none;
+    font-size: 13px;
+    color: #ffaa00;
+  }
+  
+  .dropdown {
+    content-visibility: hidden;
+  }
+  
+  .dropdown-btn {
+    content-visibility: hidden;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  .dropdown-content a {
+    color: #ffaa00;
+    padding: 20px 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .add-btn {
+    padding: 20px 15px;
+    background-color: white;
+    border: 1px solid #ffaa00;
+    color: #ffaa00;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #ffaa00;
+    box-shadow: 0 0.2px 7px #ffaa00;
+  }
+  
+  .todo-item .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .todo-item button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: white;
+    border: 1px solid #ffaa00;
+    color: #ffaa00;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+  }
+  }
